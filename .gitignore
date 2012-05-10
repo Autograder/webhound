@@ -22,3 +22,4 @@ modules
 *.jar
 *.war
 *.ear
+*.pyc
