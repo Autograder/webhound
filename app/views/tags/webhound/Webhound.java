@@ -30,8 +30,8 @@ import play.utils.HTML;
 public class Webhound extends FastTags {
 
     public static void _isMobile(Map<?, ?> args, Closure body, PrintWriter out, ExecutableTemplate template, int fromLine) {
-        if(args.containsKey("headers")) {
-            HashMap<String, ?> headers = (HashMap<String, ?>) args.get("headers");
+        if(args.containsKey("arg")) {
+            HashMap<String, ?> headers = (HashMap<String, ?>) args.get("arg");
             String userAgent = headers.get("user-agent").toString();
             String accept = headers.get("accept").toString();
 
@@ -44,8 +44,8 @@ public class Webhound extends FastTags {
     }
 
     public static void _isNotMobile(Map<?, ?> args, Closure body, PrintWriter out, ExecutableTemplate template, int fromLine) {
-        if(args.containsKey("headers")) {
-            HashMap<String, ?> headers = (HashMap<String, ?>) args.get("headers");
+        if(args.containsKey("arg")) {
+            HashMap<String, ?> headers = (HashMap<String, ?>) args.get("arg");
             String userAgent = headers.get("user-agent").toString();
             String accept = headers.get("accept").toString();
 

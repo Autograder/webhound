@@ -13,6 +13,9 @@ p(note). Your module should contain a sample app in the @sample@ directory that 
 
 h2. Tags
 
+p(note). All of these tags take a single nameless parameter which should always be the headers field of the implicit
+request object.
+
 h3. isMobile
 
 The isMobile tag will display the body of the tag if the device is determined to be a mobile device.
