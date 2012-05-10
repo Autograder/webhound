@@ -1,11 +1,8 @@
-h1. {webhound}
+h1. webhound
 
-p(note). Start with a clear statement of what the module is and what it is for. Link to any third-party libraries that the module is based on.
-
-p(note). webhound is a module to help template views based on the type of device that is viewing the page.
-It leverages the "Mobile-ESP":http://mobileesp.com library. The Mobile-ESP library recognizes many types of and
-specific devices. There are analogous tags to the methods found in the library to help template in any specific
-way you would want.
+p(note). webhound is a module to help template views based on the type of device that is viewing the page. It leverages 
+the "Mobile-ESP":http://mobileesp.com library. The Mobile-ESP library recognizes many types of and specific devices. 
+There are analogous tags to the methods found in the library to help template in any specific way you would want.
 
 p(note). If you have you don't have complicated templates and would like to easily hide certain parts of your UI
 or display them based on the type of device viewing the page this module would work great for you!
@@ -13,10 +10,6 @@ or display them based on the type of device viewing the page this module would w
 h2. Sample application
 
 p(note). Your module should contain a sample app in the @sample@ directory that demonstrates the module. Describe how to run the demo here.
-
-h2. Getting started
-
-p(note). Describe any installation that is required, beyond adding and resolving the module dependency.
 
 h2. Tags
 
