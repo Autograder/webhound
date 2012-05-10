@@ -2,3 +2,11 @@ self: play -> webhound 0.1
 
 require:
     - play
+    - com.github.autograder -> mobile-esp 1.1.2
+
+repositories:
+    - mvn:
+        type: iBiblio
+        root: "http://repo1.maven.org/maven2"
+        contains:
+            - com.github.autograder -> *
