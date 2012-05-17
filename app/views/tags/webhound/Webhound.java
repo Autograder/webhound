@@ -40,7 +40,9 @@ public class Webhound extends FastTags {
             if(ua.detectMobileLong()) {
                 out.println(JavaExtensions.toString(body));
             }
-        }
+        } else
+            throw new TemplateExecutionException(template.template, fromLine, "request.headers param missing", 
+                new TagInternalException("request.headers param missing"));
     }
 
     public static void _isNotMobile(Map<?, ?> args, Closure body, PrintWriter out, ExecutableTemplate template, int fromLine) {
@@ -54,6 +56,9 @@ public class Webhound extends FastTags {
             if(!ua.detectMobileLong()) {
                 out.println(JavaExtensions.toString(body));
             }
-        }
+        } else
+            throw new TemplateExecutionException(template.template, fromLine, "request.headers param missing", 
+                new TagInternalException("request.headers param missing"));
     }
+
 }
